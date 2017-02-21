@@ -12,5 +12,5 @@ Download
 --------
 
 ```groovy
-compile 'com.github.harrylefit:eazymvp:1.0.0'
+compile 'com.github.harrylefit:eazymvp:1.0.1'
 ```

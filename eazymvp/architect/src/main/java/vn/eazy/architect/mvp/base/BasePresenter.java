@@ -19,10 +19,11 @@ public abstract class BasePresenter<T extends BasePresenter.View> {
 
     public BasePresenter(Context context) {
         compositeDisposable = new CompositeDisposable();
+        this.context = context;
     }
 
     public void bind(T view) {
-        if(compositeDisposable == null){
+        if (compositeDisposable == null) {
             compositeDisposable = new CompositeDisposable();
         }
         this.view = new WeakReference<T>(view);
